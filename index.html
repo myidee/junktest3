@@ -1,104 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Project 2 Responsive Layout</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/search.js"></script>
+    <title>Document</title>
 </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <div class="col-lrg">
-          <h1>R G Class 1280</h1>
-        </div>
-        <div class="col-lrg">
-          <ul class="nav">          
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>          
-            <li><a href="#">Contact</a></li>
-          </ul>  
-        </div>
-      </div>
-      <div class="wrapper about">
-        <div class="col-half">
-          <img src="images/brian_barthold.png" alt="picture of me: Brian B">
-        </div>
-        <div class="col-half">
-          <p>I am R G a web development instructor, who resides in the beautiful North Vancouver. </p>
-          <p>I’ve use both front-end and back-end technologies. </p>
-          <p>I love all sorts of arts. I do photography, painting, calligraphy, and play Kamancheh (a persiaon musical instrument)</p>
-      <p>I play soccer. I have a dog named Candy.</p>
-        </div>
-      </div>       
-    </header>
-    <main id="portfolio">      
-      <h2>Portfolio</h2>
-      <div class="wrapper">
-        <!--marketing -->
-        <div class="project1 col" id="project1" onClick="reply_click(this.id)">
-          <img src="images/portfolio-1.png" alt="Marketing Page">
-          <h3>Marketing Page</h3>
-          <p>This project shows the front of a marketing website meant for a specific business I'm interested in.</p>
-        </div>
-        <!--/marketing -->
-        <!--search -->
-        <div class="project2 col" id="project2" onClick="reply_click(this.id)">
-          <img src="images/portfolio-2.png" alt="Search Page">
-          <h3>Search Page</h3>
-          <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-        </div>
-        <!--/search -->
-        <!--travel app -->
-        <div class="project3 col" id="project3" onClick="reply_click(this.id)">
-          <img src="images/portfolio-3.png" alt="Travel App">
-          <h3>Travel App</h3>
-          <p>This project compares travel times based on different transporation methods and tells you the best one.</p>
-        </div>
-        <!--/travel app -->
-        <!--map -->
-        <div class="project4 col" id="project4" onClick="reply_click(this.id)">
-          <img src="images/portfolio-4.png" alt="Map Page">
-          <h3>Map of Favorite Spots</h3>
-          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </div>
-        <!--/map -->
-        <!--photo gallery -->
-        <div class="project5 col" id="project5" onClick="reply_click(this.id)">
-          <img src="images/portfolio-5.png" alt="Photo Gallery">
-          <h3>Photo Gallery </h3>
-          <p>This project shows pictures from a recent trip to the viewer and allows them easily navigate through photos.</p>
-        </div>
-        <!--/photo gallery -->   
-        <!--calculator -->
-        <div class="project6 col" id="project6" onClick="reply_click(this.id)">
-          <img src="images/portfolio-6.png" alt="Calculator">
-          <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-        </div>
-        <!--/calculator -->   
-      </div><!--/wrapper -->   
-    </main>
-    <footer>
-      <h2 id="contact">Contact</h2>
-      <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <p>Phone <strong>+1 (111) 555-1234</strong></p>
-      <p>Email <strong>contact@loreum-ipsum-yoursite.com</strong></p>
 
-      <div class="footer__nav">
-        <p>Brian Barthold</p>
-        <p class="footer__top"><a href="#">Back to Top</a></p>
-        <ul>
-          <li> <a href="#top">Home</a> </li>
-          <li> <a href="#portfolio">Portfolio</a> </li>
-          <li> <a href="#contact">Contact</a> </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="script.js">
-      // write your code in srcript.js
-    </script>
-  </body>
+<body>
+    <p>
+        Search this site:
+        <input type="text" id="txtlookfor" autofocus />
+        <!-- Show drop-down list -->
+        &nbsp;Choose engine:
+        <select id="dropdown">
+            <option value="1">Bing</option>
+            <option value="2" selected>Google</option>
+        </select>
+        <input type="button" onclick="search()" value="Go" />
+    </p>
+</body>
+
 </html>
